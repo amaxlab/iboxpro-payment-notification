@@ -17,7 +17,9 @@ class CPFProduct
      */
     private $title;
 
-
+    /**
+     * @var CPFField[]
+     */
     private $fields;
 
     /**
@@ -61,7 +63,7 @@ class CPFProduct
     }
 
     /**
-     * @return mixed
+     * @return CPFField[]
      */
     public function getFields()
     {
@@ -69,7 +71,7 @@ class CPFProduct
     }
 
     /**
-     * @param mixed $fields
+     * @param CPFField[] $fields
      *
      * @return $this
      */
