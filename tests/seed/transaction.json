@@ -1,0 +1,30 @@
+{
+  "Operation": "Payment",
+  "Id": "0C1C518C-3009-4870-BD0F-AD8ABAE5F616",
+  "Amount": 1.55,
+  "Status": "Completed",
+  "CreatedAt": "2017-12-05T11:52:00.000Z",
+  "ApprovalCode": "SIMULATION",
+  "CardType": "visa",
+  "MID": "pos@renins.kiev",
+  "Card": "410247*5200",
+  "Device": {
+    "Id": "80F2EEE9-AF55-4205-9119-EBE572B3FBBF",
+    "Name": "iPhone7,1",
+    "Model": "Apple"
+  },
+  "Products": [
+    {
+      "Title": "Страховка жития",
+      "Code":"EXISTANCE_INS",
+      "Fields": [
+        {
+          "Code":"CONTRACT_NO",
+          "FieldType": 1,
+          "TextVal": "11111"
+        }
+      ]
+    }
+  ],
+  "ResultCode": 0
+}
