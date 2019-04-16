@@ -14,3 +14,7 @@ $ composer require amaxlab/iboxpro-payment-notification
 Or add the `amaxlab/iboxpro-payment-notification` directly in your `composer.json` file.
 
 If you are not using composer, you can just copy the files from `src` folder in your project.
+
+##License
+
+This library is released under the [MIT license](LICENSE)
