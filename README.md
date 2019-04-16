@@ -15,6 +15,6 @@ Or add the `amaxlab/iboxpro-payment-notification` directly in your `composer.jso
 
 If you are not using composer, you can just copy the files from `src` folder in your project.
 
-##License
+## License
 
 This library is released under the [MIT license](LICENSE)
