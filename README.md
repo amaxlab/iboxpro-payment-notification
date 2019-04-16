@@ -5,7 +5,7 @@
 
 ## How to Install
 
-If you are using composer, install the package [`amaxlab/iboxpro-payment-notification`](https://packagist.org/packages/zumba/json-serializer).
+If you are using composer, install the package [`amaxlab/iboxpro-payment-notification`](https://packagist.org/packages/amaxlab/iboxpro-payment-notification).
 
 ```
 $ composer require amaxlab/iboxpro-payment-notification
