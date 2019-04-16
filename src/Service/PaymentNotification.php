@@ -11,7 +11,6 @@ use Symfony\Component\Serializer\Encoder\JsonEncoder;
 use Symfony\Component\Serializer\Normalizer\ArrayDenormalizer;
 use Symfony\Component\Serializer\Normalizer\DateTimeNormalizer;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
-use Symfony\Component\Serializer\Normalizer\PropertyNormalizer;
 use Symfony\Component\Serializer\Serializer;
 
 /**
@@ -30,9 +29,9 @@ class PaymentNotification
     public function __construct()
     {
         $this->serializer = new Serializer([
+            new DateTimeNormalizer(),
             new ObjectNormalizer(null, null, null, new PhpDocExtractor()),
-            new ArrayDenormalizer(),
-            new DateTimeNormalizer()
+            new ArrayDenormalizer()
         ], [
             new JsonEncoder()
         ]);
