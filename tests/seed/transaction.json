@@ -1,9 +1,12 @@
 {
+  "RRN": "123456EF",
   "Operation": "Payment",
   "Id": "0C1C518C-3009-4870-BD0F-AD8ABAE5F616",
   "Amount": 1.55,
   "Status": "Completed",
-  "CreatedAt": "2017-12-05T11:52:00.000Z",
+  "CreatedAt": "2015-04-30T13:32:34.8400000+03:00",
+  "Description": "Заказ #1",
+  "ExtID": "A123ID456Z",
   "ApprovalCode": "SIMULATION",
   "CardType": "visa",
   "MID": "pos@renins.kiev",

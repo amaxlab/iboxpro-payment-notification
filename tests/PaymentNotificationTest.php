@@ -35,7 +35,10 @@ class PaymentNotificationTest extends TestCase
         $service = new PaymentNotification();
         $transaction = $service->handle(file_get_contents(__DIR__.'/seed/transaction.json'));
 
+        $this->assertEquals($transaction->getRrn(), '123456EF');
         $this->assertEquals($transaction->getId(), '0C1C518C-3009-4870-BD0F-AD8ABAE5F616');
+        $this->assertEquals($transaction->getDescription(), 'Заказ #1');
+        $this->assertEquals($transaction->getExtId(), 'A123ID456Z');
         $this->assertEquals($transaction->getOperation(), Transaction::OPERATION_PAYMENT);
         $this->assertEquals($transaction->getAmount(), 1.55);
         $this->assertEquals($transaction->getStatus(), Transaction::STATUS_COMPLETED);
