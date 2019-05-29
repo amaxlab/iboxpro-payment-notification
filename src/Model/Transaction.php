@@ -67,7 +67,7 @@ class Transaction
     private $ScheduleStepId;
 
     /**
-     * @var float
+     * @var string
      */
     private $amount;
 
@@ -125,6 +125,11 @@ class Transaction
      * @var Fiscal
      */
     private $fiscal;
+
+    /**
+     * @var string
+     */
+    private $readerSN;
 
     /**
      * @return string
@@ -327,7 +332,7 @@ class Transaction
     }
 
     /**
-     * @return float
+     * @return string
      */
     public function getAmount()
     {
@@ -335,7 +340,7 @@ class Transaction
     }
 
     /**
-     * @param float $amount
+     * @param string $amount
      *
      * @return $this
      */
@@ -562,6 +567,26 @@ class Transaction
     public function setFiscal($fiscal)
     {
         $this->fiscal = $fiscal;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getReaderSN()
+    {
+        return $this->readerSN;
+    }
+
+    /**
+     * @param string $readerSN
+     *
+     * @return $this
+     */
+    public function setReaderSN($readerSN)
+    {
+        $this->readerSN = $readerSN;
 
         return $this;
     }

@@ -47,6 +47,7 @@ class PaymentNotificationTest extends TestCase
         $this->assertEquals($transaction->getMid(), 'pos@renins.kiev');
         $this->assertEquals($transaction->getCard(), '410247*5200');
         $this->assertEquals($transaction->getResultCode(), 0);
+        $this->assertEquals($transaction->getReaderSN(), 'YUGX76G6X738DH8DH');
 
         $this->assertEquals($transaction->getDevice()->getId(), '80F2EEE9-AF55-4205-9119-EBE572B3FBBF');
         $this->assertEquals($transaction->getDevice()->getName(), 'iPhone7,1');

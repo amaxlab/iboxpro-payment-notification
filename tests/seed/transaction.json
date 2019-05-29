@@ -2,7 +2,7 @@
   "RRN": "123456EF",
   "Operation": "Payment",
   "Id": "0C1C518C-3009-4870-BD0F-AD8ABAE5F616",
-  "Amount": 1.55,
+  "Amount": "1.55",
   "Status": "Completed",
   "CreatedAt": "2015-04-30T13:32:34.8400000+03:00",
   "Description": "Заказ #1",
@@ -11,6 +11,7 @@
   "CardType": "visa",
   "MID": "pos@renins.kiev",
   "Card": "410247*5200",
+  "ReaderSN": "YUGX76G6X738DH8DH",
   "Device": {
     "Id": "80F2EEE9-AF55-4205-9119-EBE572B3FBBF",
     "Name": "iPhone7,1",
